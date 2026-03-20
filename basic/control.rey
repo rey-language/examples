@@ -1,0 +1,21 @@
+// a simple control flow in rey is the if, else if, and else statements
+
+
+var x = 10; // define a variable called x and assign it the value 10
+if (x > 5) { // if x is greater than 5
+    println("x is greater than 5"); // print a message to the console
+} else if (x == 5) { // else if x is equal to 5
+    println("x is equal to 5"); // print a message to the console
+} else { // else (x is less than 5)
+    println("x is less than 5"); // print a message to the console
+}
+
+//note: you can choose to add parentheses around the condition in an if statement, but it is not required. The following code is also valid:
+var a = 10; // define a variable called a and assign it the value 10
+if a > 5 {
+    println("a is greater than 5");
+} else if a == 5 {
+    println("a is equal to 5");
+} else {    
+    println("a is less than 5");
+}

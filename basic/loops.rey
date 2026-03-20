@@ -1,0 +1,51 @@
+// we'll go over all types of loops in rey
+
+//loop
+//infinite loop until a certain condition is met, or for a specific number of iterations
+
+var i = 0; // define a variable called i and assign it the value 0
+loop {
+    println("This is an infinite loop!"); // print a message to the console
+    i++;
+    if (i==5) {
+        break; // exit the loop when i is greater than or equal to 5
+    }
+    else {
+        continue; // skip the rest of the loop and start the next iteration
+    }
+}
+
+
+
+// for loop
+// a for loop is used to iterate over a sequence of values and execute a block of code for each value in the sequence
+
+
+//easy to understand if youre familiar with python
+for i in range(0, 5) { // iterate over the range of numbers from 0 to 4
+    println(i); // print the current value of i
+}
+
+var fruits = ["apple", "banana", "cherry"]; // define an array of fruits
+for fruit in fruits { // iterate over each fruit in the array
+    println(fruit); // print the current fruit
+}
+
+
+// while loop
+// a while loop is used to execute a block of code as long as a specified condition is true
+
+var count = 0; // define a variable called count and assign it the value 0
+while (count < 5) { // execute the block of code as long as count is less than 5
+    println(count); // print the current value of count
+    count = count + 1; // increment count by 1
+}
+
+
+//note: you can choose to add parentheses around the condition in a while loop, but it is not required. The following code is also valid:
+while count < 5 {
+    println(count);
+    count = count + 1;
+}
+
+
