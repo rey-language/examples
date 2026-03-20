@@ -1,0 +1,62 @@
+// a function in rey is declared using the 'func' keyword
+
+
+func greet(name) {
+    println("Hello, " + name + "!"); // greet the user by their name
+}
+
+//this function takaes a name as an argument and prints a greeting message
+//note: this function will only run if called inside main, any other function, or outside main
+
+greet("Misbah");
+
+func main() {
+    greet("Rey"); // call the greet function with the argument "Rey"
+}
+
+//functions can also take a fixed input type and return a value
+func add(a: int, b:int): int {
+    return a + b; // return the sum of a and b
+}
+
+println(add(5, 10)); // this prints 15
+
+//this also gives rise to a rather peculiar behaviour
+
+func addStr(a: String, b:int): String {
+    return a + b; // return the sum of a and b
+}
+println(addStr("5", 10)); // this prints "510"
+
+//we can check by 
+var result = addStr("5", 10);
+println(result instanceof String); // this prints true
+
+//rey also has support for default parameter values
+func greetDefault(name: String, greeting: String = "Hello") {
+    println(greeting + ", " + name + "!");
+}
+
+greetDefault("Misbah"); // prints "Hello, Misbah!"
+greetDefault("Rey", "Hi"); // prints "Hi, Rey!"
+
+
+//variable arguments - variadic functions
+func printValues(values: ...String) {
+    for value in values {
+        println(value);
+    }
+}
+
+//these extra arguments are collected into an array
+
+
+printValues("Hello", "World", "!");
+// prints:
+// Hello
+// World
+// !
+printValues("Hello", "Rey");
+//prints:
+// Hello
+// Rey
