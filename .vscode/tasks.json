@@ -1,0 +1,23 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Hello World",
+            "type": "shell",
+            "command": "rey ${file}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear" : true,
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

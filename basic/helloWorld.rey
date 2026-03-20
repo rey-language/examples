@@ -1,0 +1,9 @@
+// a simple hello world program in rey
+
+
+println("Hello, World!"); // print hello world to the console
+
+
+func main() { // main function always runs 
+    println("Hello, World!");
+}
