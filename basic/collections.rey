@@ -1,0 +1,43 @@
+// we have arrays and dictionaries in rey, let's see how they work
+
+
+var arr = [1, 2, 3, 4, 5]; // untyped array of integers
+println(arr[0]); // print the first element of the array (1)
+arr[0] = 10; // change the value of the first element of the array
+println(arr[0]); // print the updated first element of the array (10)
+
+
+var arr2: [String] = ["apple", "banana", "cherry"]; // typed array of strings
+println(arr2[1]); // print the second element of the array (banana)
+arr2[1] = "blueberry"; // change the value of the second element of the array
+println(arr2[1]); // print the updated second element of the array (blueberry)
+
+
+
+//array built-in functions
+push(arr, 6); // add an element to the end of the array
+println(arr); // print the updated array ([10, 2, 3, 4, 5, 6])
+
+pop(arr2); // remove the last element of the array
+println(arr2); // print the updated array ([apple, blueberry])
+
+
+//note: 
+push(arr2,10); // this will throw an error because arr2 is a typed array of strings and cannot contain integers
+// error[runtime]: Type error: push expected element String but got Int
+
+
+
+
+//Dictionaries are Key-Value pairs
+var dict = {"name": "Rey", "age": 5}; // untyped dictionary
+println(dict["name"]); // print the value associated with the key "name" (Rey
+dict["name"] = "Misbah"; // change the value associated with the key "name"
+println(dict["name"]); // print the updated value associated with the key "name" (Misbah)
+
+var dict2: {String:int} = {"apple": 1, 
+                            "banana": 2, 
+                            "cherry": 3
+                            }; // typed dictionary with string keys and integer values
+
+println(dict2["banana"]); // print the value associated with the key "banana" (2)
