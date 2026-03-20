@@ -60,3 +60,10 @@ printValues("Hello", "Rey");
 //prints:
 // Hello
 // Rey
+
+
+
+//lambda functions
+
+var addlambda = (a: int, b: int) => a + b; //lambda funcs take variables from surrounding scope
+println(addlambda(5, 10)); // prints 15
