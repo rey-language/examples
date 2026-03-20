@@ -1,0 +1,37 @@
+// a variable in rey is defined using the var keyword
+
+
+var name = "Rey"; // define a variable called name and assign it the value "Rey"
+//note: this variable is acting as a global variable 
+
+
+func main() { // main function always runs 
+    println("Hello, " + name + "!"); // greet the user by their name
+    //although main runs at last, you cant access variables defined AFTER the main function - yet. (interpreter is top to bottom)
+}
+
+//constants are defined with the const keyword and cannot be reassigned after they are defined
+const PI = 3.14; // define a constant variable called pi and assign it the value 3.14
+
+println("The value of pi is: " + PI); // print the value of pi
+//PI = 3.14159; // this will throw an error because pi is a constant variable and cannot be reassigned
+
+//types
+
+// a variable can have the following types: int, float, string, char, boolean, array, dictionary, null, undefined
+var age = 25; // define a variable called age and assign it the value 25 (int)
+var height = 5.9; // define a variable called height and assign it the value
+var isStudent = true; // define a variable called isStudent and assign it the value true (boolean)
+var hobbies = ["coding", "gaming", "reading"]; // define a variable called hobbies and
+
+
+//note: these are dynamic mutable types, meaning that their value itself can be changed and also reassigned to different types
+//such as: 
+age =  'h';
+
+//if we want to make the variable of an immutable type, we can assign it a type at declaration 
+var location: String = "Lucknow"; // define a variable called location and assign it the value "Lucknow" with type string
+var pin: int = 25; // define a variable called pin and assign it the value 25 with type int
+var average: float = 5.9; // define a variable called average and assign it the value 5.9 with type float
+var isResident: bool = true; // define a variable called isResident and assign it the value true with type boolean
+var hobbies: [String]= ["coding", "gaming", "reading"]; // define a variable called hobbies and assign it the value ["coding", "gaming", "reading"] with type array of strings
