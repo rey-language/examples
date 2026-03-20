@@ -23,7 +23,7 @@ println(arr2); // print the updated array ([apple, blueberry])
 
 
 //note: 
-push(arr2,10); // this will throw an error because arr2 is a typed array of strings and cannot contain integers
+// push(arr2,10); // this will throw an error because arr2 is a typed array of strings and cannot contain integers
 // error[runtime]: Type error: push expected element String but got Int
 
 
@@ -35,9 +35,12 @@ println(dict["name"]); // print the value associated with the key "name" (Rey
 dict["name"] = "Misbah"; // change the value associated with the key "name"
 println(dict["name"]); // print the updated value associated with the key "name" (Misbah)
 
-var dict2: {String:int} = {"apple": 1, 
-                            "banana": 2, 
-                            "cherry": 3
-                            }; // typed dictionary with string keys and integer values
+var dict2: {String:int} = {"apple": 1, "banana": 2,  "cherry": 3}; // typed dictionary with string keys and integer values
 
 println(dict2["banana"]); // print the value associated with the key "banana" (2)
+
+
+//dict notations 
+
+println(dict["name"]); // Index Bracket
+println(dict2.apple); // Dot Notation
