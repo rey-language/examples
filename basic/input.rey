@@ -1,0 +1,12 @@
+func main() {
+   
+
+    var name = input("What is your name?: "); // get the user's input and store it in a variable called name
+
+    // println(name instanceof String); - returns true indicating that the type of name is a string no matter the input
+
+    println("Hello, " + name + "!"); // greet the user by their name
+
+    //note: input is a build in function that takes input and conerts it to string
+    // to test it: we can run println(name instanceof String);
+}
